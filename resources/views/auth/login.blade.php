@@ -6,7 +6,6 @@
 <div class="min-h-screen flex items-center justify-center bg-pink-100 py-12 px-4">
     <div class="bg-white p-8 rounded-2xl shadow-xl border border-pink-300 w-full max-w-md animate-fade-in-up">
         <div class="text-center">
-            <img src="https://i.ibb.co/yP6STrQ/cute-login.png" alt="Cute Login" class="w-32 mx-auto mb-4">
             <h2 class="text-3xl font-extrabold text-pink-600">Login</h2>
             <p class="text-sm text-gray-600">Yuk masuk ke akun kamu~</p>
         </div>
