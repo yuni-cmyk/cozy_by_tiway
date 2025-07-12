@@ -1,6 +1,14 @@
 #!/bin/sh
 
-# Jalankan migrate fresh dan seeder (drop semua tabel lalu seed ulang)
+# Tunggu MySQL siap (maks 30 detik)
+echo "Menunggu database siap..."
+for i in {1..30}; do
+  php artisan migrate:status --database=mysql && break
+  echo "Database belum siap, tunggu 1 detik..."
+  sleep 1
+done
+
+# Jalankan migrate fresh dan seeder
 php artisan migrate:fresh --seed --force || true
 
 # Tampilkan isi log laravel ke console (jika ada)
