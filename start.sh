@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Set permission agar storage dan cache bisa diakses
+chmod -R 777 storage bootstrap/cache
+
 # Tunggu MySQL siap (maks 30 detik)
 echo "Menunggu database siap..."
 for i in {1..30}; do
