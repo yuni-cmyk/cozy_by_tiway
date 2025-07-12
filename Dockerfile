@@ -30,6 +30,9 @@ RUN mkdir -p storage/framework/cache storage/framework/sessions storage/framewor
 # Buat storage link
 RUN php artisan storage:link || true
 
+# Jalankan migration otomatis
+RUN php artisan migrate --force || true
+
 # Copy konfigurasi nginx
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
