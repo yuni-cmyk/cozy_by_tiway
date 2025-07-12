@@ -18,7 +18,7 @@ return new class extends Migration
     $table->foreignId('pelanggan_id')->constrained()->onDelete('cascade');
     $table->foreignId('produk_id')->constrained()->onDelete('cascade');
     $table->integer('jumlah'); // wajib diisi
-    $table->float('total_harga');
+    $table->bigInteger('total_harga');
     $table->timestamps();
 });
 

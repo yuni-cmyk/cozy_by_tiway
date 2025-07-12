@@ -9,7 +9,7 @@
     </div>
 @endif
 
-<form action="{{ route('pesanan.store') }}" method="POST" class="bg-pink-100 p-6 rounded-xl shadow-md max-w-xl mx-auto space-y-4">
+<form action="{{ route('pesanan.store') }}" method="POST" class="bg-purple-100 p-6 rounded-xl shadow-md max-w-xl mx-auto space-y-4">
     @csrf
 
     {{-- ID pelanggan otomatis --}}
@@ -24,7 +24,7 @@
 
     {{-- Daftar produk --}}
     @foreach($produk as $index => $item)
-        <div class="bg-white p-4 rounded-lg shadow-inner">
+        <div class="bg-lavender p-4 rounded-lg shadow-inner">
             <input type="hidden" name="produk_id[]" value="{{ $item->id }}">
 
             <div class="flex items-center gap-4">

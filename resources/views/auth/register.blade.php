@@ -3,10 +3,10 @@
 @section('title', 'Register')
 
 @section('content')
-<div class="min-h-screen flex items-center justify-center bg-pink-50 py-12 px-4">
-    <div class="bg-white p-8 rounded-2xl shadow-xl border border-pink-300 w-full max-w-md animate-fade-in-up">
+<div class="min-h-screen flex items-center justify-center bg-purple-50 py-12 px-4">
+    <div class="bg-lavender p-8 rounded-2xl shadow-xl border border-pink-300 w-full max-w-md animate-fade-in-up">
         <div class="text-center">
-            <h2 class="text-3xl font-extrabold text-pink-600">Daftar Akun</h2>
+            <h2 class="text-3xl font-extrabold text-violet-600">Daftar Akun</h2>
             <p class="text-sm text-gray-600">Isi datamu dulu yaa~</p>
         </div>
 
@@ -50,7 +50,7 @@
 
             <div>
                 <button type="submit"
-                    class="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-xl transition transform hover:scale-105 duration-300">
+                    class="w-full bg-pastelpurple-500 hover:bg-violet-600 text-white font-bold py-2 px-4 rounded-xl transition transform hover:scale-105 duration-300">
                     Daftar
                 </button>
             </div>
@@ -58,7 +58,7 @@
 
         <p class="mt-6 text-center text-sm text-gray-700">
             Sudah punya akun?
-            <a href="{{ route('login') }}" class="text-pink-600 hover:text-pink-800 font-semibold">Login di sini</a>
+            <a href="{{ route('login') }}" class="text-violet-600 hover:text-pink-800 font-semibold">Login di sini</a>
         </p>
     </div>
 </div>

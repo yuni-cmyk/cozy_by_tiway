@@ -3,7 +3,7 @@
 @section('judul', 'Edit Data Pelanggan')
 
 @section('content')
-<form action="{{ route('pelanggan.update', $pelanggan->id) }}" method="POST" class="bg-pink-100 p-6 rounded-xl shadow max-w-md mx-auto">
+<form action="{{ route('pelanggan.update', $pelanggan->id) }}" method="POST" class="bg-purple-100 p-6 rounded-xl shadow max-w-md mx-auto">
     @csrf
     @method('PUT')
 

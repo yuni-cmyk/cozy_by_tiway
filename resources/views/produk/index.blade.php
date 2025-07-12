@@ -6,10 +6,10 @@
 <form action="{{ route('pesanan.create') }}" method="GET">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         @foreach($produk as $item)
-            <div class="bg-pink-100 p-4 rounded-2xl shadow hover:shadow-lg transition">
+            <div class="bg-purple-100 p-4 rounded-2xl shadow hover:shadow-lg transition">
                 <img src="{{ asset('storage/gambar_baju/' . $item->gambar) }}"
                     alt="{{ $item->nama_baju }}"
-                    class="rounded-xl h-56 w-full object-contain bg-white p-2" />
+                    class="rounded-xl h-56 w-full object-contain bg-lavender p-2" />
 
                 <h2 class="text-xl font-bold text-purple-700 mt-4">{{ $item->nama_baju }}</h2>
                 <p class="text-purple-600 mb-2">Rp{{ number_format($item->harga, 0, ',', '.') }}</p>

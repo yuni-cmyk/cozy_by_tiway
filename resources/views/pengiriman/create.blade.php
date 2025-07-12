@@ -10,7 +10,7 @@
     </div>
 @endif
 
-<form action="{{ route('pengiriman.store') }}" method="POST" class="bg-pink-100 p-6 rounded-xl shadow-md">
+<form action="{{ route('pengiriman.store') }}" method="POST" class="bg-purple-100 p-6 rounded-xl shadow-md">
     @csrf
 
     @php $pesananPertama = $pesanan->first(); @endphp

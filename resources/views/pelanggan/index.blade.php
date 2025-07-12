@@ -5,7 +5,7 @@
 @section('content')
 <a href="{{ route('pelanggan.create') }}" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 mb-4 inline-block">+ Tambah Pelanggan</a>
 
-<table class="w-full table-auto bg-pink-100 rounded-xl overflow-hidden">
+<table class="w-full table-auto bg-purple-100 rounded-xl overflow-hidden">
     <thead class="bg-purple-300 text-white">
         <tr>
             <th class="px-4 py-2">nama_pelanggan</th>

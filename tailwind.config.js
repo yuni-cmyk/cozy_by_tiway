@@ -16,17 +16,22 @@ module.exports = {
             keyframes: {
                 fadeInUp: {
                     '0%': {
-                        opacity: 0,
+                        opacity: '0',
                         transform: 'translateY(20px)',
                     },
                     '100%': {
-                        opacity: 1,
+                        opacity: '1',
                         transform: 'translateY(0)',
                     },
                 },
             },
-        }, // <- nutup extend
-    }, // <- nutup theme
+            colors: {
+                pastelpurple: '#d9b8ff',
+                lavender: '#e6e6fa',
+                violet: '#b799ff',
+            },
+        },
+    },
 
-    plugins: [],
-}
+    plugins: [require('@tailwindcss/forms')],
+};

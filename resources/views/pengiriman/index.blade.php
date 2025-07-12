@@ -12,8 +12,8 @@
 
 <a href="{{ route('pengiriman.create') }}" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 mb-4 inline-block">+ Tambah Pengiriman</a>
 
-<table class="w-full table-auto bg-white shadow-md rounded">
-    <thead class="bg-pink-300 text-white">
+<table class="w-full table-auto bg-lavender shadow-md rounded">
+    <thead class="bg-purple-300 text-white">
         <tr>
             <th class="px-4 py-2">Nama Pelanggan</th>
             <th class="px-4 py-2">Produk</th>

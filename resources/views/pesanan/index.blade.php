@@ -11,7 +11,7 @@
 
 <a href="{{ route('pesanan.create') }}" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 mb-4 inline-block">+ Tambah Pesanan</a>
 
-<div class="overflow-x-auto bg-pink-100 rounded-xl shadow-md p-4">
+<div class="overflow-x-auto bg-purple-100 rounded-xl shadow-md p-4">
     <table class="w-full table-auto border-collapse">
         <thead>
             <tr class="bg-purple-200 text-purple-800">

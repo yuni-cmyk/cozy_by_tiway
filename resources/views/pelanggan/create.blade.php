@@ -3,7 +3,7 @@
 @section('judul', 'Tambah Data Pelanggan')
 
 @section('content')
-<form action="{{ route('pelanggan.store') }}" method="POST" class="bg-pink-100 p-6 rounded-xl shadow max-w-md mx-auto">
+<form action="{{ route('pelanggan.store') }}" method="POST" class="bg-purple-100 p-6 rounded-xl shadow max-w-md mx-auto">
     @csrf
     <label class="block mb-2">nama Pelanggan</label>
     <input type="text" name="nama_pelanggan" class="w-full p-2 rounded border mb-4" required>

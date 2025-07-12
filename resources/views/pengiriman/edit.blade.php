@@ -4,7 +4,7 @@
 @section('judul', 'Edit Pengiriman')
 
 @section('content')
-<form action="{{ route('pengiriman.update', $pengiriman->id) }}" method="POST" class="bg-pink-100 p-6 rounded-xl shadow-md">
+<form action="{{ route('pengiriman.update', $pengiriman->id) }}" method="POST" class="bg-purple-100 p-6 rounded-xl shadow-md">
     @csrf
     @method('PUT')
 

@@ -4,8 +4,8 @@
 @section('judul', 'Terima Kasih Sudah Berbelanja!')
 
 @section('content')
-<div class="bg-pink-100 text-center p-8 rounded-xl shadow-lg">
-    <h2 class="text-2xl font-bold text-purple-700 mb-4">🎉 Terima kasih sudah berbelanja di BajuKita!</h2>
+<div class="bg-purple-100 text-center p-8 rounded-xl shadow-lg">
+    <h2 class="text-2xl font-bold text-purple-700 mb-4">🎉 Terima kasih sudah berbelanja di CozybyTiway!</h2>
     <p class="text-purple-600 mb-6">Pesanan kamu sedang diproses dan akan segera dikirimkan 💌</p>
 
     <div class="flex justify-center gap-4">

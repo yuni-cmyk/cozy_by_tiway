@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="max-w-xl mx-auto mt-10 bg-pink-100 p-6 rounded-xl shadow">
+<div class="max-w-xl mx-auto mt-10 bg-purple-100 p-6 rounded-xl shadow">
     <h1 class="text-2xl font-bold text-center text-purple-700 mb-4">Form Tambah Pelanggan</h1>
 
     <form action="{{ route('dashboard.store') }}" method="POST" class="space-y-4">
@@ -27,7 +27,7 @@
             <textarea name="alamat" required class="w-full p-2 border border-pink-300 rounded"></textarea>
         </div>
 
-        <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded w-full">
+        <button type="submit" class="bg-pastelpuple-500 hover:bg-violet-600 text-white font-bold py-2 px-4 rounded w-full">
             Simpan
         </button>
     </form>

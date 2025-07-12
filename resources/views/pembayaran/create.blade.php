@@ -9,7 +9,7 @@
     </div>
 @endif
 
-<form action="{{ route('pembayaran.store') }}" method="POST" class="bg-pink-100 p-6 rounded-xl shadow-md max-w-xl mx-auto animate-fade-in-up">
+<form action="{{ route('pembayaran.store') }}" method="POST" class="bg-purple-100 p-6 rounded-xl shadow-md max-w-xl mx-auto animate-fade-in-up">
     @csrf
 
     {{-- Input semua ID pesanan --}}
