@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Jalankan migrate dan seeder (jika gagal, lanjutkan)
-php artisan migrate --seed --force || true
+# Jalankan migrate fresh dan seeder (drop semua tabel lalu seed ulang)
+php artisan migrate:fresh --seed --force || true
 
 # Tampilkan isi log laravel ke console (jika ada)
 if [ -f storage/logs/laravel.log ]; then
