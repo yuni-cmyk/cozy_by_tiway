@@ -32,3 +32,5 @@ fi
 
 # Start supervisor (php-fpm + nginx)
 /usr/bin/supervisord -c /etc/supervisord.conf 
+
+php artisan storage:link || true 
