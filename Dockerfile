@@ -30,17 +30,18 @@ RUN mkdir -p storage/framework/cache storage/framework/sessions storage/framewor
 # Buat storage link
 RUN php artisan storage:link || true
 
-# Jalankan migration otomatis
-RUN php artisan migrate --seed --force || true
-
 # Copy konfigurasi nginx
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
 # Supervisor config
 COPY ./supervisord.conf /etc/supervisord.conf
 
+# Copy start.sh dan beri permission eksekusi
+COPY ./start.sh /start.sh
+RUN chmod +x /start.sh
+
 # Expose port 8080
 EXPOSE 8080
 
-# Start supervisor (nginx + php-fpm)
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"] 
+# Start pakai start.sh
+CMD ["/start.sh"] 
