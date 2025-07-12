@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\produk;
+use App\Models\Produk;
 
 class ProdukSeeder extends Seeder
 {
@@ -39,7 +39,7 @@ class ProdukSeeder extends Seeder
         ];
 
         foreach ($produks as $produk) {
-            produk::create($produk);
+            Produk::create($produk);
         }
     }
 } 
