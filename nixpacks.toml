@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["php82", "composer", "nodejs", "npm"]
+nixPkgs = ["php82", "php82Packages.composer", "nodejs", "npm"]
 cmds = [
     "mkdir -p storage/framework/cache storage/framework/sessions storage/framework/testing storage/framework/views",
     "chmod -R 777 storage bootstrap/cache"
